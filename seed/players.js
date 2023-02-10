@@ -4,6 +4,7 @@ const Player = require('./../models/players')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
+    await Player.collection.drop()
     const players = [
        { name: 'Tom Brady', age: '45', position: 'Quarterback', name: 'Mike Evens', age: '29', position: 'Wide Receiver'},
        { name: 'Sam Darnold', age: '25', position: 'Quarterback', name: 'D.J. Moore', age: '25', position: 'Wide Receiver'},

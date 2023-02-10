@@ -19,6 +19,18 @@ const getAllPlayers = async (req,res) => {
     }
 }
 
+const createPlayer = async (req, res) => {
+    try {
+        const players = await new Player(req.body)
+        await players.save()
+        return res.status(201).json({
+            players,
+        });
+    } catch (error) {
+        return res.status(500).json({ error: error.message })
+    }
+}
+
 const getPlayersById = async (req, res) => {
     try {
         const { id } = req.params;
@@ -32,9 +44,34 @@ const getPlayersById = async (req, res) => {
     }
 }
 
+const updatePlayer = async (req, res) => {
+    try {
+        const players = await Player.findByIdAndUpdate(req.params.id, req.body, { new: true})
+        res.status(200).json(players)
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
+const deletePlayer = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const deleted = await Player.findByIdAndDelete(id)
+        if (deleted) {
+            return res.status(200).send("Player deleted");
+        }
+        throw new Error("Player not found");
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
 
 module.exports = {
     getAllTeams,
     getAllPlayers,
-    getPlayersById
+    getPlayersById,
+    updatePlayer,
+    createPlayer,
+    deletePlayer
 }
