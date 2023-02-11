@@ -1,23 +1,30 @@
-import { useParams } from "react-router-dom"
-
+import { useParams, Link } from "react-router-dom"
+// navigating to each conference from nfc or afc(home page). 
 const Division = () => {
 
     const {division} = useParams()
-    console.log(division)
     return (
         <div>
+            <Link to={`/conference/${division}/north`}>
             <div>
                 <h1>North</h1>
             </div>
+            </Link>
+            <Link to={`/conference/${division}/south`}>
         <div>
             <h1>South</h1>
-        </div>
+            </div>
+        </Link>
+        <Link to={`/conference/${division}/west`}>
         <div>
             <h1>West</h1>
         </div>
+        </Link>
+        <Link to={`/conference/${division}/east`}>
         <div>
             <h1>East</h1>
         </div>
+        </Link>
     </div>
     )
 }
