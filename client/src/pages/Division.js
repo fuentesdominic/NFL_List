@@ -1,4 +1,9 @@
+import { useParams } from "react-router-dom"
+
 const Division = () => {
+
+    const {division} = useParams()
+    console.log(division)
     return (
         <div>
             <div>

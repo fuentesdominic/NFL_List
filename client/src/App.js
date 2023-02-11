@@ -42,8 +42,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/division/:name" element={<Division />} />
-          <Route path="/conference" element={<Conference />} />
+          <Route path="/division/:division" element={<Division />} />
+          <Route path="/conference/:division/:conference" element={<Conference />} />
           <Route path="/team" element={<Team />} allTeams={allTeams} allPlayers={allPlayers}/>
         </Routes>
       </main>
