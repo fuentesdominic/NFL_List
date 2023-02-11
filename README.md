@@ -6,7 +6,7 @@ The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In 
 
 # Navigating 
 
-- The Home page gives you two options to choose from `NFC` and `AFC`.
+- The Home page gives you two options to choose from *NFC* and *AFC*.
 - The next page has all the conferences inside the chosem division, from there you can pick whatever conference you desire.
 - From here you can select a certain team and view the details about that team including players!
 - You have the option of creating new players, editing former players, and deleting current ones.
@@ -16,7 +16,7 @@ The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In 
 
 # Technology Used
 
-*React*, 
+`JavaScript`, `React`, `CSS` 
 
 # Future changes
 
