@@ -30,12 +30,10 @@ function App() {
     }
   }
 
-
   useEffect(() => {
     getAllPlayers()
     getAllTeams()
   }, [])
-
 
   return (
     <div>
@@ -44,7 +42,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/division" element={<Division />} />
           <Route path="/conference" element={<Conference />} />
-          <Route path="/team" element={<Team />} allTeams={allTeams}/>
+          <Route path="/team" element={<Team />} allTeams={allTeams} allPlayers={allPlayers}/>
         </Routes>
       </main>
     </div>
