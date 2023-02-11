@@ -1,6 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Division from './components/Division';
+import Conference from './components/Conference';
 
 function App() {
   const [allTeams, setAllTeams] = useState([])
@@ -35,7 +37,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/division" element={<Division />} />
+          <Route path="/conference" element={<Conference />} />
+          <Route path="/team" element={<Team />} />
+        </Routes>
       </header>
     </div>
   );
