@@ -1,6 +1,9 @@
 const Division = () => {
   return (
-    <div>Division</div>
+    <div>
+        <Division />
+        <h1>Division</h1>
+    </div>
   )
 }
 export default Division

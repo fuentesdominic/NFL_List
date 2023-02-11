@@ -1,8 +1,11 @@
 import './App.css';
 import { useState, useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom'
 import axios from 'axios'
+import Home from './components/Home';
 import Division from './components/Division';
 import Conference from './components/Conference';
+import Team from './components/Team';
 
 function App() {
   const [allTeams, setAllTeams] = useState([])
@@ -35,15 +38,15 @@ function App() {
 
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/division" element={<Division />} />
           <Route path="/conference" element={<Conference />} />
-          <Route path="/team" element={<Team />} />
+          <Route path="/team" element={<Team />} allTeams={allTeams}/>
         </Routes>
-      </header>
+      </main>
     </div>
   );
 }
