@@ -8,30 +8,49 @@ const main = async () => {
     const players = [
        { 
         name: 'Tom Brady', 
+        team: 'Buccaneers',
         age: '45', 
         position: 'Quarterback', 
+       },
+       {
         name: 'Mike Evens', 
+        team: 'Buccaneers',
         age: '29', 
-        position: 'Wide Receiver'},
+        position: 'Wide Receiver'
+        },
        { 
-        name: 'Sam Darnold', 
+        name: 'Sam Darnold',
+        team: 'Pathers',
         age: '25', 
-        position: 'Quarterback', 
-        name: 'D.J. Moore', 
-        age: '25', 
-        position: 'Wide Receiver'},
+        position: 'Quarterback',
+       },
        { 
-        name: 'Jameis Winston', 
+        name: 'D.J. Moore',
+        team: 'Panthers', 
+        age: '25', 
+        position: 'Wide Receiver'
+        },
+       { 
+        name: 'Jameis Winston',
+        team: 'Saints', 
         age: '29', 
         position: 'Quarterback', 
-        name: 'Alvin Kamara', 
+       },
+       {
+        name: 'Alvin Kamara',
+        team: 'Saints', 
         age: '27', 
-        position: 'Running Back'},
+        position: 'Running Back'
+        },
        { 
-        name: 'Marcus Mariota', 
+        name: 'Marcus Mariota',
+        team: 'Falcons', 
         age: '29', 
         position: 'Quarterback', 
-        name: 'Kyle Pitts', 
+       },
+       {
+        name: 'Kyle Pitts',
+        team: 'Falcons',
         age: '22', 
         position: 'Tight End'},
        

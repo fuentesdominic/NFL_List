@@ -9,6 +9,7 @@ const Team = new Schema(
         location: { type: String, required: true },
         stadium: { type: String, required: true },
         capacity: { type: String, required: true },
+        logo: { type: String, required: true },
     },
     { timestamps: true },
 )
