@@ -1,4 +1,4 @@
-const Team = () => {
+const Team = ({allTeams, allPlayers}) => {
     return (
         <div>
             <h1>Team</h1>

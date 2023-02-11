@@ -7,20 +7,28 @@ const main = async () => {
     const teams = [
        { 
         team: 'Buccaneers', 
+        conference: 'South',
+        division: 'NFC',
         location: 'Tampa Bay, Florida', 
         stadium: 'Raymond James Stadium', 
         capacity: '65,890' },
        { 
         team: 'Pathers', 
+        conference: 'South',
+        division: 'NFC',
         location: 'Charlotte, North Carolina', 
         stadium: 'Bank of America Stadium', 
         capacity: '75,412' },
        { team: 'Saints', 
+       conference: 'South',
+        division: 'NFC',
         location: 'New Orleans, Louisiana', 
         stadium: 'Caesars Superdome', 
         capacity: '73,208' },
        { 
         team: 'Falcons', 
+        conference: 'South',
+        division: 'NFC',
         location: 'Atlanta, Georgia', 
         stadium: 'Mercedes-Benz Stadium', 
         capacity: '71,000' }
