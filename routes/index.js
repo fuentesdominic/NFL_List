@@ -1,7 +1,6 @@
 const { Router } = require('express');
 const controllers = require('../controllers')
 const router = Router();
-console.log('this is root!')
 
 router.get('/teams', controllers.getAllTeams)
 router.post('/teams/players', controllers.createPlayer)
