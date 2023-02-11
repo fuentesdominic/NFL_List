@@ -4,7 +4,7 @@ const Player = require('./../models/players')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-    await Player.collection.drop()
+    // await Player.collection.drop()
     const players = [
        { 
         name: 'Tom Brady', 
@@ -38,7 +38,7 @@ const main = async () => {
     ]
 
     await Player.insertMany(players)
-    console.log("Created some teams!")
+    console.log("Created some players!")
 }
 const run = async () => {
     await main()
