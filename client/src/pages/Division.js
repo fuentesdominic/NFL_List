@@ -1,8 +1,19 @@
 const Division = () => {
     return (
         <div>
-            <h1>Division</h1>
+            <div>
+                <h1>North</h1>
+            </div>
+        <div>
+            <h1>South</h1>
         </div>
+        <div>
+            <h1>West</h1>
+        </div>
+        <div>
+            <h1>East</h1>
+        </div>
+    </div>
     )
 }
 

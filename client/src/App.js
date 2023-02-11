@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Division from './pages/Division'
 import Conference from './pages/Conference'
 import Team from './pages/Team'
+import Header from './components/Header';
 
 function App() {
   const [allTeams, setAllTeams] = useState([])
@@ -37,10 +38,11 @@ function App() {
 
   return (
     <div>
+      <Header />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/division" element={<Division />} />
+          <Route path="/division/:name" element={<Division />} />
           <Route path="/conference" element={<Conference />} />
           <Route path="/team" element={<Team />} allTeams={allTeams} allPlayers={allPlayers}/>
         </Routes>
