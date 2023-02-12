@@ -273,100 +273,123 @@ const main = async () => {
         {
             name: 'Kenny Pickett',
             team: 'Steelers',
-            age: '', 
+            age: '24', 
             position: 'Quarterback'
         },
         {
             name: 'T. J. Watt',
             team: 'Steelers',
-            age: '', 
-            position: ''
+            age: '28', 
+            position: 'Linebacker'
         },
         {
-            name: '',
+            name: 'Deshaun Watson',
             team: 'Browns',
-            age: '', 
-            position: ''
+            age: '27', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Nick Chubb',
             team: 'Browns',
-            age: '', 
-            position: ''
+            age: '27', 
+            position: 'Running Back'
         },
         {
-            name: '',
+            name: 'Josh Allen',
             team: 'Bills',
-            age: '', 
-            position: ''
+            age: '26', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Stefon Diggs',
             team: 'Bills',
-            age: '', 
-            position: ''
+            age: '29', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Tua Tagovailoa',
             team: 'Dolphins',
-            age: '', 
-            position: ''
+            age: '24', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Tyreek Hill',
             team: 'Dolphins',
-            age: '', 
-            position: ''
+            age: '28', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Mac Jones',
             team: 'Patriots',
-            age: '', 
-            position: ''
+            age: '24', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'DeVante Parker',
             team: 'Patriots',
-            age: '', 
-            position: ''
+            age: '30', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Zach Wilson',
             team: 'Jets',
-            age: '', 
-            position: ''
+            age: '23', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Sauce Gardner',
             team: 'Jets',
-            age: '', 
-            position: ''
+            age: '22', 
+            position: 'Cornerback'
         },
         {
-            name: '',
-            team: '',
-            age: '', 
-            position: ''
+            name: 'Patrick Mahomes',
+            team: 'Chiefs',
+            age: '27', 
+            position: 'Quarterback'
         },
         {
-            name: '',
-            team: '',
-            age: '', 
-            position: ''
+            name: 'Travis Kelce',
+            team: 'Chiefs',
+            age: '33', 
+            position: 'Tight End'
         },
         {
-            name: '',
-            team: '',
-            age: '', 
-            position: ''
+            name: 'Justin Herbert',
+            team: 'Chargers',
+            age: '24', 
+            position: 'Quarterback'
         },
         {
-            name: '',
-            team: '',
-            age: '', 
-            position: ''
+            name: 'Keenan Allen',
+            team: 'Chargers',
+            age: '30', 
+            position: 'Wide Receiver'
         },
-
+        {
+            name: 'Derek Carr',
+            team: 'Raiders',
+            age: '31', 
+            position: 'Quarterback'
+        },
+        {
+            name: 'Davante Adams',
+            team: 'Raiders',
+            age: '30', 
+            position: 'Wide receiver'
+        },
+        {
+            name: 'Russell Wilson',
+            team: 'Broncos',
+            age: '34', 
+            position: 'Quarterback'
+        },
+        {
+            name: 'Jerry Jeudy',
+            team: 'Broncos',
+            age: '23', 
+            position: 'Wide Receiver'
+        },
     ]
 
     await Player.insertMany(players)
