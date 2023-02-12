@@ -213,71 +213,71 @@ const main = async () => {
         {
             name: 'Derrick Henry',
             team: 'Titans',
-            age: '', 
+            age: '29', 
             position: 'Running Back'
         },
         {
             name: 'Treylon Burks',
             team: 'Titans',
-            age: '', 
+            age: '22', 
             position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Matt Ryan',
             team: 'Colts',
-            age: '', 
-            position: ''
+            age: '37', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Michael Pittman Jr.',
             team: 'Colts',
-            age: '', 
-            position: ''
+            age: '25', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Davis Mills',
             team: 'Texans',
-            age: '', 
-            position: ''
+            age: '24', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Brandin Cooks',
             team: 'Texans',
-            age: '', 
-            position: ''
+            age: '29', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Joe Burrow',
             team: 'Bengals',
-            age: '', 
-            position: ''
+            age: '26', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: `Ja'Marr Chase`,
             team: 'Bengals',
-            age: '', 
-            position: ''
+            age: '22', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Lamar Jackson',
             team: 'Ravens',
-            age: '', 
-            position: ''
+            age: '26', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Mark Andrews',
             team: 'Ravens',
-            age: '', 
-            position: ''
+            age: '27', 
+            position: 'Tight End'
         },
         {
-            name: '',
+            name: 'Kenny Pickett',
             team: 'Steelers',
             age: '', 
-            position: ''
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'T. J. Watt',
             team: 'Steelers',
             age: '', 
             position: ''
