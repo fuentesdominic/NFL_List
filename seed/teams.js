@@ -261,10 +261,10 @@ const main = async () => {
         team: 'Chiefs', 
         conference: 'West',
         division: 'AFC',
-        location: '', 
-        stadium: '', 
-        capacity: '',
-        logo: ''
+        location: 'Kansas City, Missouri', 
+        stadium: 'GEHA Field at Arrowhead Stadium', 
+        capacity: '76,416',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/kc.png'
     },
     { 
         team: 'Chargers', 
@@ -279,19 +279,19 @@ const main = async () => {
         team: 'Raiders', 
         conference: 'West',
         division: 'AFC',
-        location: '', 
-        stadium: '', 
-        capacity: '',
-        logo: ''
+        location: 'Paradise, Nevada', 
+        stadium: 'Allegiant Stadium', 
+        capacity: '65,000; (expandable to 71,835)',
+        logo: 'https://a.espncdn.com/i/teamlogos/nfl/500/lv.png'
     },
     { 
         team: 'Broncos', 
         conference: 'West',
         division: 'AFC',
-        location: '', 
-        stadium: '', 
-        capacity: '',
-        logo: ''
+        location: 'Denver, Colorado', 
+        stadium: 'Empower Field at Mile High', 
+        capacity: '76,125',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/den.png'
     },
     ]
 
