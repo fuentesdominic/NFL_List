@@ -243,10 +243,10 @@ const main = async () => {
         team: 'Patriots', 
         conference: 'East',
         division: 'AFC',
-        location: '', 
-        stadium: '', 
-        capacity: '',
-        logo: ''
+        location: 'Foxborough, Massachusetts', 
+        stadium: 'Gillette Stadium', 
+        capacity: '65,878',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ne.png'
     },
     { 
         team: 'Jets', 
@@ -255,6 +255,42 @@ const main = async () => {
         location: 'East Rutherford, New Jersey', 
         stadium: 'MetLife Stadium', 
         capacity: '82,500',
+        logo: ''
+    },
+    { 
+        team: 'Chiefs', 
+        conference: 'West',
+        division: 'AFC',
+        location: '', 
+        stadium: '', 
+        capacity: '',
+        logo: ''
+    },
+    { 
+        team: 'Chargers', 
+        conference: 'West',
+        division: 'AFC',
+        location: 'Los Angeles, California', 
+        stadium: 'SoFi Stadium', 
+        capacity: '70,000 (expandable up to 100,240 for major events)',
+        logo: ''
+    },
+    { 
+        team: 'Raiders', 
+        conference: 'West',
+        division: 'AFC',
+        location: '', 
+        stadium: '', 
+        capacity: '',
+        logo: ''
+    },
+    { 
+        team: 'Broncos', 
+        conference: 'West',
+        division: 'AFC',
+        location: '', 
+        stadium: '', 
+        capacity: '',
         logo: ''
     },
     ]
