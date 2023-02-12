@@ -127,64 +127,64 @@ const main = async () => {
             position: 'Center'
         },
         {
-            name: '',
+            name: 'Daniel Jones',
             team: 'Giants',
-            age: '', 
-            position: ''
+            age: '25', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Saquon Barkley',
             team: 'Giants',
-            age: '', 
-            position: ''
+            age: '26', 
+            position: 'Running back'
         },
         {
-            name: '',
+            name: 'Taylor Heinicke',
             team: 'Commanders',
-            age: '', 
-            position: ''
+            age: '29', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Chase Young',
             team: 'Commanders',
-            age: '', 
-            position: ''
+            age: '23', 
+            position: 'Defensive End'
         },
         {
-            name: '',
+            name: 'Jimmy Garoppolo',
             team: '49ers',
-            age: '', 
-            position: ''
+            age: '31', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Christian McCaffrey',
             team: '49ers',
-            age: '', 
-            position: ''
+            age: '26', 
+            position: 'Running Back'
         },
         {
-            name: '',
+            name: 'Geno Smith',
             team: 'Seahwaks',
-            age: '', 
-            position: ''
+            age: '32', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'DK Metcalf',
             team: 'Seahawks',
-            age: '', 
-            position: ''
+            age: '25', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Cam Akers',
             team: 'Rams',
-            age: '', 
-            position: ''
+            age: '23', 
+            position: 'Running Back'
         },
         {
-            name: '',
+            name: 'Aaron Donald',
             team: 'Rams',
-            age: '', 
-            position: ''
+            age: '31', 
+            position: 'Defensive Tackle'
         },
         {
             name: '',
