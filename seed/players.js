@@ -13,7 +13,7 @@ const main = async () => {
         position: 'Quarterback', 
        },
        {
-        name: 'Mike Evens', 
+        name: 'Mike Evans', 
         team: 'Buccaneers',
         age: '29', 
         position: 'Wide Receiver'

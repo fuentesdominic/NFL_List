@@ -126,10 +126,10 @@ const main = async () => {
         team: 'Seahawks', 
         conference: 'West',
         division: 'NFC',
-        location: '', 
-        stadium: '', 
-        capacity: '',
-        logo: ''
+        location: 'Seattle, Washington', 
+        stadium: 'Lumen Field', 
+        capacity: '72,000',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/sea.png'
     },
     { 
         team: 'Rams', 
