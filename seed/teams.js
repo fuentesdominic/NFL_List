@@ -162,14 +162,32 @@ const main = async () => {
         team: 'Titans', 
         conference: 'South',
         division: 'AFC',
-        location: '', 
-        stadium: '', 
-        capacity: '',
-        logo: ''
+        location: 'Nashville, Tennessee', 
+        stadium: 'Nissan Stadium', 
+        capacity: '69,143',
+        logo: 'https://a.espncdn.com/i/teamlogos/nfl/500/ten.png'
     },
     { 
         team: 'Colts', 
         conference: 'South',
+        division: 'AFC',
+        location: 'Indianapolis, Indiana', 
+        stadium: 'Lucas Oil Stadium', 
+        capacity: '70,000',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ind.png'
+    },
+    { 
+        team: 'Texans', 
+        conference: 'South',
+        division: 'AFC',
+        location: 'Houston, Texas', 
+        stadium: 'NRG Stadium', 
+        capacity: '72,220',
+        logo: 'https://a.espncdn.com/i/teamlogos/nfl/500/hou.png'
+    },
+    { 
+        team: 'Bengals', 
+        conference: 'North',
         division: 'AFC',
         location: '', 
         stadium: '', 
@@ -177,8 +195,26 @@ const main = async () => {
         logo: ''
     },
     { 
-        team: 'Texans', 
-        conference: 'South',
+        team: 'Ravens', 
+        conference: 'North',
+        division: 'AFC',
+        location: '', 
+        stadium: '', 
+        capacity: '',
+        logo: ''
+    },
+    { 
+        team: 'Steelers', 
+        conference: 'North',
+        division: 'AFC',
+        location: '', 
+        stadium: '', 
+        capacity: '',
+        logo: ''
+    },
+    { 
+        team: 'Browns', 
+        conference: 'North',
         division: 'AFC',
         location: '', 
         stadium: '', 
