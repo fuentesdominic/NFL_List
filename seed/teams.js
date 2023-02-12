@@ -40,6 +40,24 @@ const main = async () => {
         stadium: 'Mercedes-Benz Stadium', 
         capacity: '71,000',
         logo: 'https://a.espncdn.com/i/teamlogos/nfl/500/atl.png'
+    },
+    { 
+        team: 'Vikings', 
+        conference: 'North',
+        division: 'NFC',
+        location: 'Minneapolis, Minnesota', 
+        stadium: 'U.S. Bank Stadium', 
+        capacity: '73,000',
+        logo: 'https://a.espncdn.com/i/teamlogos/nfl/500/min.png'
+    },
+    { 
+        team: 'Lions', 
+        conference: 'North',
+        division: 'NFC',
+        location: 'Detroit, Michigan', 
+        stadium: 'Ford Field', 
+        capacity: '65,000',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/det.png'
     }
     ]
 
