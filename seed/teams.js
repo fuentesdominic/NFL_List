@@ -189,36 +189,72 @@ const main = async () => {
         team: 'Bengals', 
         conference: 'North',
         division: 'AFC',
-        location: '', 
-        stadium: '', 
-        capacity: '',
-        logo: ''
+        location: 'Cincinnati, Ohio', 
+        stadium: 'Paycor Stadium', 
+        capacity: '65,535',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/cin.png&h=200&w=200'
     },
     { 
         team: 'Ravens', 
         conference: 'North',
         division: 'AFC',
-        location: '', 
-        stadium: '', 
-        capacity: '',
-        logo: ''
+        location: 'Baltimore, Maryland', 
+        stadium: 'M&T Bank Stadium', 
+        capacity: '71,008',
+        logo: 'https://a.espncdn.com/i/teamlogos/nfl/500/bal.png'
     },
     { 
         team: 'Steelers', 
         conference: 'North',
         division: 'AFC',
+        location: 'Pittsburgh, Pennsylvania', 
+        stadium: 'Acrisure Stadium', 
+        capacity: '68,400',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/pit.png'
+    },
+    { 
+        team: 'Browns', 
+        conference: 'North',
+        division: 'AFC',
+        location: 'Cleveland, Ohio', 
+        stadium: 'FirstEnergy Stadium', 
+        capacity: '67,895',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/cle.png'
+    },
+    { 
+        team: 'Bills', 
+        conference: 'East',
+        division: 'AFC',
+        location: 'Erie County, New York', 
+        stadium: 'Highmark Stadium', 
+        capacity: '71,608',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/buf.png'
+    },
+    { 
+        team: 'Dolphins', 
+        conference: 'East',
+        division: 'AFC',
+        location: 'Miami Gardens, Florida', 
+        stadium: 'Hard Rock Stadium', 
+        capacity: '65,326',
+        logo: 'https://s.yimg.com/cv/apiv2/default/nfl/20190724/500x500/2019_MIA_wbg.png'
+    },
+    { 
+        team: 'Patriots', 
+        conference: 'East',
+        division: 'AFC',
         location: '', 
         stadium: '', 
         capacity: '',
         logo: ''
     },
     { 
-        team: 'Browns', 
-        conference: 'North',
+        team: 'Jets', 
+        conference: 'East',
         division: 'AFC',
-        location: '', 
-        stadium: '', 
-        capacity: '',
+        location: 'East Rutherford, New Jersey', 
+        stadium: 'MetLife Stadium', 
+        capacity: '82,500',
         logo: ''
     },
     ]
