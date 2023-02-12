@@ -187,40 +187,40 @@ const main = async () => {
             position: 'Defensive Tackle'
         },
         {
-            name: '',
+            name: 'DeAndre Hopkins',
             team: 'Cardinals',
-            age: '', 
-            position: ''
+            age: '30', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'James Conner',
             team: 'Cardinals',
-            age: '', 
-            position: ''
+            age: '27', 
+            position: 'Running Back'
         },
         {
-            name: '',
+            name: 'Trevor Lawrence',
             team: 'Jaguars',
-            age: '', 
-            position: ''
+            age: '23', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Christian Kirk',
             team: 'Jaguars',
-            age: '', 
-            position: ''
+            age: '26', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Derrick Henry',
             team: 'Titans',
             age: '', 
-            position: ''
+            position: 'Running Back'
         },
         {
-            name: '',
+            name: 'Treylon Burks',
             team: 'Titans',
             age: '', 
-            position: ''
+            position: 'Wide Receiver'
         },
         {
             name: '',
