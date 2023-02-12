@@ -135,15 +135,51 @@ const main = async () => {
         team: 'Rams', 
         conference: 'West',
         division: 'NFC',
+        location: 'Los Angeles, California', 
+        stadium: 'SoFi Stadium', 
+        capacity: '70,000 (expandable up to 100,240 for major events)',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/lar.png'
+    },
+    { 
+        team: 'Cardinals', 
+        conference: 'West',
+        division: 'NFC',
+        location: 'Glendale, Arizona', 
+        stadium: 'State Farm Stadium', 
+        capacity: '63,400',
+        logo: 'https://static.www.nfl.com/t_q-best/league/api/clubs/logos/ARI'
+    },
+    { 
+        team: 'Jaguars', 
+        conference: 'South',
+        division: 'AFC',
+        location: 'Jacksonville, Florida', 
+        stadium: 'TIAA Bank Field', 
+        capacity: '67,164',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/jax.png'
+    },
+    { 
+        team: 'Titans', 
+        conference: 'South',
+        division: 'AFC',
         location: '', 
         stadium: '', 
         capacity: '',
         logo: ''
     },
     { 
-        team: 'Cardinals', 
-        conference: 'West',
-        division: 'NFC',
+        team: 'Colts', 
+        conference: 'South',
+        division: 'AFC',
+        location: '', 
+        stadium: '', 
+        capacity: '',
+        logo: ''
+    },
+    { 
+        team: 'Texans', 
+        conference: 'South',
+        division: 'AFC',
         location: '', 
         stadium: '', 
         capacity: '',
