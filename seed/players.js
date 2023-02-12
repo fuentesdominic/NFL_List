@@ -76,55 +76,55 @@ const main = async () => {
             name: 'Aidan Hutchinson',
             team: 'Lions',
             age: '22', 
-            position: 'Defensive end'
+            position: 'Defensive End'
         },
         {
-            name: '',
+            name: 'Aaron Rodgers',
             team: 'Packers',
-            age: '', 
-            position: ''
+            age: '39', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Christian Watson',
             team: 'Packers',
-            age: '', 
-            position: ''
+            age: '23', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Justin Fields',
             team: 'Bears',
-            age: '', 
-            position: ''
+            age: '23', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'David Montgomery',
             team: 'Bears',
-            age: '', 
-            position: ''
+            age: '25', 
+            position: 'Running Back'
         },
         {
-            name: '',
+            name: 'Dak Prescott',
             team: 'Cowboys',
-            age: '', 
-            position: ''
+            age: '29', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'CeeDee Lamb',
             team: 'Cowboys',
-            age: '', 
-            position: ''
+            age: '23', 
+            position: 'Wide Receiver'
         },
         {
-            name: '',
+            name: 'Jalen Hurts',
             team: 'Eagles',
-            age: '', 
-            position: ''
+            age: '24', 
+            position: 'Quarterback'
         },
         {
-            name: '',
+            name: 'Jason Kelce',
             team: 'Eagles',
-            age: '', 
-            position: ''
+            age: '35', 
+            position: 'Center'
         },
         {
             name: '',
@@ -150,6 +150,223 @@ const main = async () => {
             age: '', 
             position: ''
         },
+        {
+            name: '',
+            team: '49ers',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: '49ers',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Seahwaks',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Seahawks',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Rams',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Rams',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Cardinals',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Cardinals',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Jaguars',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Jaguars',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Titans',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Titans',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Colts',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Colts',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Texans',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Texans',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Bengals',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Bengals',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Ravens',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Ravens',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Steelers',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Steelers',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Browns',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Browns',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Bills',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Bills',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Dolphins',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Dolphins',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Patriots',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Patriots',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Jets',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: 'Jets',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: '',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: '',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: '',
+            age: '', 
+            position: ''
+        },
+        {
+            name: '',
+            team: '',
+            age: '', 
+            position: ''
+        },
+
     ]
 
     await Player.insertMany(players)
