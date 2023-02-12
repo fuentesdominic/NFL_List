@@ -255,7 +255,7 @@ const main = async () => {
         location: 'East Rutherford, New Jersey', 
         stadium: 'MetLife Stadium', 
         capacity: '82,500',
-        logo: ''
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/nyj.png'
     },
     { 
         team: 'Chiefs', 
@@ -273,7 +273,7 @@ const main = async () => {
         location: 'Los Angeles, California', 
         stadium: 'SoFi Stadium', 
         capacity: '70,000 (expandable up to 100,240 for major events)',
-        logo: ''
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/lac.png'
     },
     { 
         team: 'Raiders', 
