@@ -58,7 +58,34 @@ const main = async () => {
         stadium: 'Ford Field', 
         capacity: '65,000',
         logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/det.png'
-    }
+    },
+    { 
+        team: 'Packers', 
+        conference: 'North',
+        division: 'NFC',
+        location: 'Green Bay, Wisconsin', 
+        stadium: 'Lambeau Field', 
+        capacity: '81,441',
+        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/gb.png'
+    },
+    { 
+        team: 'Bears', 
+        conference: 'North',
+        division: 'NFC',
+        location: '', 
+        stadium: '', 
+        capacity: '',
+        logo: ''
+    },
+    { 
+        team: 'Cowboys', 
+        conference: 'East',
+        division: 'NFC',
+        location: '', 
+        stadium: '', 
+        capacity: '',
+        logo: ''
+    },
     ]
 
     await Team.insertMany(teams)
