@@ -164,7 +164,7 @@ const main = async () => {
         },
         {
             name: 'Geno Smith',
-            team: 'Seahwaks',
+            team: 'Seahawks',
             age: '32', 
             position: 'Quarterback'
         },

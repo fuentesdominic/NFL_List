@@ -1,10 +1,10 @@
 # NFL Teams
 
-# Description 
+## Description 
 
 The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In this project you can checkout what team belongs in each division and what conference they represent. In the top right corner on the home page you can also create a team of your own! While we are stoaked to see unique teams you create, we also give you the option to delete the custom team.
 
-# Navigating 
+## Navigating 
 
 - The Home page gives you two options to choose from *NFC* and *AFC*.
 - The next page has all the conferences inside the chosem division, from there you can pick whatever conference you desire.
@@ -12,14 +12,15 @@ The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In 
 - You have the option of creating new players, editing former players, and deleting current ones.
 - There's a home button on the top right if you desire to go back to the home page.
 
-# Screenshots of application
+## Screenshots of application
 
-# Technology Used
+## Technology Used
 
 `JavaScript`, `React`, `CSS` 
 
-# Future changes
+## Future changes
 
-# Link to Socials
+## Link to Socials
 
-# Credits
+##  Credits
+
