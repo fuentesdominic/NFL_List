@@ -16,7 +16,7 @@ const main = async () => {
     },
         
        { 
-        team: 'Pathers', 
+        team: 'Panthers', 
         conference: 'South',
         division: 'NFC',
         location: 'Charlotte, North Carolina', 
