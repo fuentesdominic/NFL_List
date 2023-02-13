@@ -5,6 +5,7 @@ const Division = () => {
     const {division} = useParams()
     return (
         <div>
+            <h2>Select A Conference:</h2>
             <Link to={`/conference/${division}/north`}>
             <div>
                 <h1>North</h1>

@@ -12,7 +12,7 @@ const Conference = ({allTeams}) => {
 
     return (
         <div>
-            <h1>Conference</h1>
+            <h2>Select A Team:</h2>
           {teams.map((team) => (
             <div key={team._id}>
                 <Link to={`/${team.team}`}>

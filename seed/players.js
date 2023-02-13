@@ -20,7 +20,7 @@ const main = async () => {
         },
        { 
             name: 'Sam Darnold',
-            team: 'Pathers',
+            team: 'Panthers',
             age: '25', 
             position: 'Quarterback',
        },

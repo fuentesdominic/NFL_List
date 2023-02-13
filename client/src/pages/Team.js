@@ -34,13 +34,17 @@ const Team = ({allTeams, allPlayers}) => {
             {teams.map((team) => (
                 <div key={team._id}>
                     <img src={team.logo} alt=''></img>
+                    <h4>Stadium Location:</h4>
                     <h3>{team.location}</h3>
+                    <h4>Stadium Name:</h4>
                     <h3>{team.stadium}</h3>
+                    <h4>Seats:</h4>
                     <h3>{team.capacity}</h3>
                 </div>
             ))}
             {players.map((player) => (
                 <div key={player._id}>
+                    <h3>Players:</h3>
                     <h4>{player.name}</h4>
                     <p>{player.age}</p>
                     <p>{player.position}</p>
@@ -61,7 +65,7 @@ const Team = ({allTeams, allPlayers}) => {
                     rows='1'
                     onChange={handleChange}
                     value={createPlayers.age}></textarea>
-                <label htmlFor="position">Position</label>
+                <label htmlFor="position">Position:</label>
                 <select id="position" onChange={handleChange} value={createPlayers.position}>
                     <option value='quarterback'>Quarterback</option>
                     <option value='offensive linemen'>Offensive Linemen</option>
