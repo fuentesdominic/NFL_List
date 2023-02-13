@@ -14,9 +14,9 @@ const Conference = ({allTeams}) => {
         <div>
             <h1>Conference</h1>
           {teams.map((team) => (
-            <div>
+            <div key={team._id}>
                 <Link to={`/${team.team}`}>
-                    <img src={team.logo}></img>
+                    <img src={team.logo} alt=''></img>
                 </Link>
             </div>
           ))}
