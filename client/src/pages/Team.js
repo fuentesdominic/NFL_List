@@ -17,6 +17,7 @@ const Team = ({allTeams, allPlayers}) => {
     }
 
     const [createPlayer, setCreatePlayer] = useState(addPlayer)
+    const [currentPlayers, setCurrentPlayers] = useState([])
 
     const handleSubmit = async (evt) => {
         evt.preventDefault()
@@ -31,7 +32,7 @@ const Team = ({allTeams, allPlayers}) => {
     const getAtPlayers = async () => {
         try {
           let res = await axios.get('http://localhost:3001/api/teams/players')
-          getAtPlayers(res.data.players)
+          setCurrentPlayers(res.data.players)
         } catch (err) {
           console.log(err)
         }
@@ -40,6 +41,8 @@ const Team = ({allTeams, allPlayers}) => {
       useEffect(() => {
         getAtPlayers()
       }, [])
+
+    
 
     return (
         <div>
