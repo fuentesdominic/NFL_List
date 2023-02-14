@@ -1,4 +1,4 @@
-img.nflLogo {
+img.nflLogo, a.homelink {
     max-width: 30px;
     max-height: 30px;
     min-height: auto;
@@ -11,8 +11,8 @@ img.nflLogo {
 }
 
 .homeafc {
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 400px;
+    max-width: 400px;
 }
 
 .teamlogo {
@@ -24,7 +24,7 @@ a.homelink, header {
     align-content: center;
     color: white;
     background-color: black;
-     padding: 1em;
+    padding: 1em;
     min-height: 1.5em; 
     font-family: 'Georgia';
     margin: 0.5em;
@@ -35,10 +35,6 @@ h1.allDivs {
     text-decoration: none;
     font-family: 'Georgia';
     color: black;
-}
-
-a.homelink {
-    justify-content: space-between;
 }
 
 div.team {
