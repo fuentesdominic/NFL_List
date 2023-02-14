@@ -8,7 +8,7 @@ import Conference from './pages/Conference'
 import Team from './pages/Team'
 import Header from './components/Header';
 
-function App() {
+function App(props) {
   const [allTeams, setAllTeams] = useState([])
   const [allPlayers, setAllPLayers] = useState([])
 
@@ -24,7 +24,6 @@ function App() {
   const getAllPlayers = async () => {
     try {
       let res = await axios.get('http://localhost:3001/api/teams/players')
-      console.log(res)
       setAllPLayers(res.data.players)
     } catch (err) {
       console.log(err)
@@ -34,7 +33,7 @@ function App() {
   useEffect(() => {
     getAllPlayers()
     getAllTeams()
-  }, [])
+  }, [props])
 
   return (
     <div>

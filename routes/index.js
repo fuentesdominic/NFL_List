@@ -9,4 +9,4 @@ router.get('/teams/players/:id', controllers.getPlayersById)
 router.put('/teams/players/:id', controllers.updatePlayer)
 router.delete('/teams/players/:id', controllers.deletePlayer)
 
-module.exports = router;
+module.exports = router; 

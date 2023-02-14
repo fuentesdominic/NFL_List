@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import axios from "axios"
 
 const Team = ({allTeams, allPlayers}) => {
@@ -9,24 +9,37 @@ const Team = ({allTeams, allPlayers}) => {
     const players = allPlayers.filter(player => player.team === team)
     const teams = allTeams.filter(player => player.team === team)
 
-    const addPlayers = {
+    const addPlayer = {
         name: '',
         age: '',
-        position: ''
+        position: '',
+        team: `${team}`
     }
 
-    const [createPlayers, setCreatePlayers] = useState(addPlayers)
+    const [createPlayer, setCreatePlayer] = useState(addPlayer)
 
     const handleSubmit = async (evt) => {
         evt.preventDefault()
-        await axios.post('/teams/players', createPlayers)
-        setCreatePlayers(addPlayers)
-        allPlayers()
+        await axios.post('http://localhost:3001/api/teams/players', createPlayer)
+        setCreatePlayer(addPlayer)
     }
 
     const handleChange = (evt) => {
-        setCreatePlayers({...createPlayers, [evt.target.id]: evt.target.value})
+        setCreatePlayer({...createPlayer, [evt.target.id]: evt.target.value})
     }
+
+    const getAtPlayers = async () => {
+        try {
+          let res = await axios.get('http://localhost:3001/api/teams/players')
+          getAtPlayers(res.data.players)
+        } catch (err) {
+          console.log(err)
+        }
+      }
+
+      useEffect(() => {
+        getAtPlayers()
+      }, [])
 
     return (
         <div>
@@ -57,16 +70,16 @@ const Team = ({allTeams, allPlayers}) => {
                     cols='30'
                     rows='1'
                     onChange={handleChange}
-                    value={createPlayers.name}></textarea>
+                    value={createPlayer.name}></textarea>
                 <label htmlFor="age">Age:</label>
                 <textarea
                     id="age"
                     cols='2'
                     rows='1'
                     onChange={handleChange}
-                    value={createPlayers.age}></textarea>
+                    value={createPlayer.age}></textarea>
                 <label htmlFor="position">Position:</label>
-                <select id="position" onChange={handleChange} value={createPlayers.position}>
+                <select id="position" onChange={handleChange} value={createPlayer.position}>
                     <option value='quarterback'>Quarterback</option>
                     <option value='offensive linemen'>Offensive Linemen</option>
                     <option value='running back'>Running Back</option>
