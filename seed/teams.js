@@ -192,7 +192,7 @@ const main = async () => {
         location: 'Cincinnati, Ohio', 
         stadium: 'Paycor Stadium', 
         capacity: '65,535',
-        logo: 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/cin.png&h=200&w=200'
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Cincinnati_Bengals_logo.svg/1024px-Cincinnati_Bengals_logo.svg.png'
     },
     { 
         team: 'Ravens', 

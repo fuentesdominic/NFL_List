@@ -16,7 +16,7 @@ const Conference = ({allTeams}) => {
           {teams.map((team) => (
             <div key={team._id}>
                 <Link to={`/${team.team}`}>
-                    <img src={team.logo} alt=''></img>
+                    <img className="teamlogo" src={team.logo} alt=''></img>
                 </Link>
             </div>
           ))}

@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div>
+    <div className='header'>
       <header>
         <nav>
-            <Link to='/'>Home</Link>
+            <Link className='homelink' to='/'>Home</Link>
         </nav>
       </header>
     </div>

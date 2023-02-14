@@ -50,7 +50,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
             <h2>{team}</h2>
             {teams.map((team) => (
                 <div key={team._id}>
-                    <img src={team.logo} alt=''></img>
+                    <img className="teamlogo" src={team.logo} alt=''></img>
                     <h4>Stadium Location:</h4>
                     <h3>{team.location}</h3>
                     <h4>Stadium Name:</h4>
@@ -65,6 +65,8 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                     <h4>{player.name}</h4>
                     <p>{player.age}</p>
                     <p>{player.position}</p>
+                    <button type=''>Edit</button>
+                    <button type=''>Delete</button>
                 </div>
             ))}
             <form onSubmit={handleSubmit}>
