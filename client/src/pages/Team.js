@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
 
-const Team = ({allTeams, allPlayers}) => {
+const Team = ({allTeams, allPlayers, getAllPlayers}) => {
 
     const {team} = useParams()
 
@@ -17,17 +17,7 @@ const Team = ({allTeams, allPlayers}) => {
     }
 
     const [createPlayer, setCreatePlayer] = useState(addPlayer)
-    const [currentPlayers, setCurrentPlayers] = useState([])
-
-    const handleSubmit = async (evt) => {
-        evt.preventDefault()
-        await axios.post('http://localhost:3001/api/teams/players', createPlayer)
-        setCreatePlayer(addPlayer)
-    }
-
-    const handleChange = (evt) => {
-        setCreatePlayer({...createPlayer, [evt.target.id]: evt.target.value})
-    }
+    const [currentPlayers, setCurrentPlayers] = useState()
 
     const getAtPlayers = async () => {
         try {
@@ -38,9 +28,20 @@ const Team = ({allTeams, allPlayers}) => {
         }
       }
 
+    const handleSubmit = async (evt) => {
+        evt.preventDefault()
+        await axios.post('http://localhost:3001/api/teams/players', createPlayer)
+        setCreatePlayer(addPlayer)
+        getAllPlayers()
+    }
+
+    const handleChange = (evt) => {
+        setCreatePlayer({...createPlayer, [evt.target.id]: evt.target.value})
+    }
+
       useEffect(() => {
         getAtPlayers()
-      }, [])
+      }, [allPlayers])
 
     
 
@@ -99,5 +100,4 @@ const Team = ({allTeams, allPlayers}) => {
         
     )
 }
-// .fitler in order to grab each player.
 export default Team
