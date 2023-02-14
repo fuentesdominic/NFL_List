@@ -1,8 +1,9 @@
-img.nflLogo, a.homelink {
+img.nflLogo {
     max-width: 30px;
     max-height: 30px;
     min-height: auto;
-    justify-content: space-between;
+    position: absolute; right: 20px;
+    justify-content: center;
 }
 
 .homenfc {
@@ -21,25 +22,24 @@ img.nflLogo, a.homelink {
 }
 
 a.homelink, header {
+    justify-content: center;
     align-content: center;
     color: white;
     background-color: black;
     padding: 1em;
-    min-height: 1.5em; 
+    min-height: 2em; 
     font-family: 'Georgia';
-    margin: 0.5em;
     text-decoration: none;
 }
 
 h1.allDivs {
-    text-decoration: none;
     font-family: 'Georgia';
+    text-decoration: none;
     color: black;
 }
 
 div.team {
     font-family: 'Georgia';
-    align-items: center;
 }
 
 div.teamPlayer {
