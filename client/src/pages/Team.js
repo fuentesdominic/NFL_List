@@ -49,7 +49,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
         <div>
             <h2>{team}</h2>
             {teams.map((team) => (
-                <div key={team._id}>
+                <div className="team" key={team._id}>
                     <img className="teamlogo" src={team.logo} alt=''></img>
                     <h4>Stadium Location:</h4>
                     <h3>{team.location}</h3>
@@ -60,7 +60,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                 </div>
             ))}
             {players.map((player) => (
-                <div key={player._id}>
+                <div className="teamPlayer" key={player._id}>
                     <h3>Players:</h3>
                     <h4>{player.name}</h4>
                     <p>{player.age}</p>

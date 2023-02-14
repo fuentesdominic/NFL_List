@@ -1,32 +1,54 @@
+img.nflLogo {
+    max-width: 30px;
+    max-height: 30px;
+    min-height: auto;
+    justify-content: space-between;
+}
+
 .homenfc {
-    max-height: 500px; 
-    max-width: 500px;
+    max-height: 400px; 
+    max-width: 400px;
 }
 
 .homeafc {
-    max-height: 500px;
-    max-width: 500px;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 .teamlogo {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
-header {
-    background-color: #212121;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 3em;
-  }
-
-  header nav a {
-    margin: 0 1em;
-  }
-
-homelink {
+a.homelink, header {
+    align-content: center;
     color: white;
+    background-color: black;
+     padding: 1em;
+    min-height: 1.5em; 
+    font-family: 'Georgia';
+    margin: 0.5em;
+    text-decoration: none;
 }
+
+h1.allDivs {
+    text-decoration: none;
+    font-family: 'Georgia';
+    color: black;
+}
+
+a.homelink {
+    justify-content: space-between;
+}
+
+div.team {
+    font-family: 'Georgia';
+    align-items: center;
+}
+
+div.teamPlayer {
+    font-family: 'Georgia';
+}
+
 
 
