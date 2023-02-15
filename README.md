@@ -7,10 +7,10 @@ The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In 
 ## Navigating 
 
 - The Home page gives you two options to choose from *NFC* and *AFC*.
-- The next page has all the conferences inside the chosem division, from there you can pick whatever conference you desire.
-- From here you can select a certain team and view the details about that team including players!
-- You have the option of creating new players, editing former players, and deleting current ones.
-- There's a home button on the top right if you desire to go back to the home page.
+- The next page has all the conferences from the division you picked, you can pick whatever conference you desire.
+- From here you have the icons of all teams from that conference, select a certain team and view the details about that team including players!
+- You have the option of creating new players, editing players positions, and deleting current players.
+- There's a home button on the top left if you desire to go back to the home page.
 
 ## Screenshots of application
 
@@ -20,7 +20,10 @@ The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In 
 
 ## Future changes
 
+There is always room for improvement! As soon as possible I would like to make the feature to add players as a button in the header. I would also like to allow users to edit the entire team. Another feature I would like to add is the ability to view photos of the teams facility when you are viewing their details.
+
 ## Link to Socials
 
 ##  Credits
 
+Information about the NFL and their logos
