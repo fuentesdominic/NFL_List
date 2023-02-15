@@ -26,4 +26,4 @@ There is always room for improvement! As soon as possible I would like to make t
 
 ##  Credits
 
-Information about the NFL and their logos
+[Information about the NFL and their logos](https://www.nfl.com/)
