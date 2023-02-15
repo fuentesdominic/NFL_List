@@ -24,6 +24,8 @@ There is always room for improvement! As soon as possible I would like to make t
 
 ## Link to Socials
 
+[Linkedin](https://www.linkedin.com/in/dominicfuentes1/)
+
 ##  Credits
 
 - [Information about the NFL and their logos](https://www.nfl.com/)
