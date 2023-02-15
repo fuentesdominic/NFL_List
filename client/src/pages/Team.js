@@ -39,12 +39,9 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
         
     }
 
-
-
     const getAtPlayers = async () => {
         try {
           let res = await axios.get('http://localhost:3001/api/teams/players')
-          console.log(res.data.players)
           setCurrentPlayers(res.data.players)
         } catch (err) {
           console.log(err)
@@ -60,6 +57,11 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
 
     const handleChange = (evt) => {
         setCreatePlayer({...createPlayer, [evt.target.id]: evt.target.value})
+    }
+
+    const handleDelete = async (id) => {
+        await axios.delete(`http://localhost:3001/api/teams/players/${id}`)
+        getAllPlayers()
     }
 
       useEffect(() => {
@@ -86,9 +88,8 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                     <h4>{player.name}</h4>
                     <p>{player.age}</p>
                     <p>{player.position}</p>
-                    <button onClick={() => handleShowEdit(player._id)}>Edit</button>
-                    {/* <Edit getAllPlayers={getAllPlayers} player={player}/> */}
-                    <button type=''>Delete</button>
+                    <button onClick={handleShowEdit}>Edit</button>
+                    <button onClick={() => handleDelete(player._id)}>Delete</button>
                     {showEdit && <div> <label htmlFor={player._id}>Position:</label> <select id={player._id} onChange={handleEdit} value={positions.position}>
                     <option value='Quarterback'>Quarterback</option>
                     <option value='Offensive Linemen'>Offensive Linemen</option>
