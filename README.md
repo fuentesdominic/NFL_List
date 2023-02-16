@@ -14,6 +14,9 @@ The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In 
 
 ## Screenshots of application
 
+[Home Page](cid:3C653027-A434-458B-BE49-5DC63CA6827E![image](https://user-images.githubusercontent.com/118767719/219421588-d2cb6924-8f12-4903-aebe-5a66344ea59d.png)
+)
+
 ## Technology Used
 
 `JavaScript`, `MongoDB`, `Express.js`, `React`, `Node.js`, `CSS`
@@ -30,4 +33,5 @@ There is always room for improvement! As soon as possible I would like to make t
 
 - [Information about the NFL and their logos](https://www.nfl.com/)
 - [Understanding CRUD](https://geeksforgeeks.com/)
+- [Using breakpoint on CSS](https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-should-you-use/)
 
