@@ -30,7 +30,7 @@ There is always room for improvement! As soon as possible I would like to make t
 
 ## Link to Socials
 
-[Linkedin](https://www.linkedin.com/in/dominicfuentes1/)
+[Linkedln](https://www.linkedin.com/in/dominicfuentes1/)
 
 ##  Credits
 
