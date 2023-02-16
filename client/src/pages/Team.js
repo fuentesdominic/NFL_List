@@ -23,7 +23,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
 
     const handlePut = async (id) => {
         console.log(id, positions[id])
-        const res = await axios.put(`http://localhost:3001/api/teams/players/${id}`, {position: positions[id]})
+        const res = await axios.put(`/api/teams/players/${id}`, {position: positions[id]})
         getAtPlayers()
     }
     const handleEdit = (evt) => {
