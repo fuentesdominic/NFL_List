@@ -70,7 +70,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
 
     return currentPlayers && (
         <div>
-            <h2>{team}</h2>
+            <h2 className="teamName">{team}</h2>
             {teams.map((team) => (
                 <div className="team" key={team._id}>
                     <img className="teamlogo" src={team.logo} alt=''></img>
@@ -82,7 +82,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                     <h3>{team.capacity}</h3>
                 </div>
             ))}
-                <h3>Players:</h3>
+                <h3 className="playerName">Players:</h3>
             {players.map((player) => (
                 <div className="teamPlayer" key={player._id}>
                     <h4>{player.name}</h4>
@@ -105,22 +105,22 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                 }
                 </div>
             ))}
-            <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Name:</label>
+            <form className="createPlayer" onSubmit={handleSubmit}>
+            <label className="createName" htmlFor="name">Name:</label>
                 <textarea
                     id="name"
                     cols='30'
                     rows='1'
                     onChange={handleChange}
                     value={createPlayer.name}></textarea>
-                <label htmlFor="age">Age:</label>
+                <label className="createAge" htmlFor="age">Age:</label>
                 <textarea
                     id="age"
                     cols='2'
                     rows='1'
                     onChange={handleChange}
                     value={createPlayer.age}></textarea>
-                <label htmlFor="position">Position:</label>
+                <label className="createPlayer" htmlFor="position">Position:</label>
                 <select id="position" onChange={handleChange} value={createPlayer.position}>
                     <option value='Quarterback'>Quarterback</option>
                     <option value='Offensive Linemen'>Offensive Linemen</option>
@@ -132,7 +132,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                     <option value='Cornerback'>Cornerback</option>
                     <option value='Safety'>Safety</option>
                 </select>
-                <button type='submit'>Add Player</button>
+                <button className="addPlayer" type='submit'>Add Player</button>
             </form>
         </div>
         

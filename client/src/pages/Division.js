@@ -5,25 +5,25 @@ const Division = () => {
     const {division} = useParams()
     return (
         <div>
-            <h2>Select A Conference:</h2>
-            <Link to={`/conference/${division}/north`}>
+            <h2 className="divisionSelect">Select A Conference:</h2>
+            <Link className="division" to={`/conference/${division}/north`}>
             <div>
-                <h1 className="allDivs">North</h1>
+                <h1>North</h1>
             </div>
             </Link>
-            <Link to={`/conference/${division}/south`}>
+            <Link className="division" to={`/conference/${division}/south`}>
         <div>
-            <h1 className="allDivs">South</h1>
+            <h1>South</h1>
             </div>
         </Link>
-        <Link to={`/conference/${division}/west`}>
+        <Link className="division" to={`/conference/${division}/west`}>
         <div>
-            <h1 className="allDivs">West</h1>
+            <h1>West</h1>
         </div>
         </Link>
-        <Link to={`/conference/${division}/east`}>
+        <Link className="division" to={`/conference/${division}/east`}>
         <div>
-            <h1 className="allDivs">East</h1>
+            <h1>East</h1>
         </div>
         </Link>
     </div>

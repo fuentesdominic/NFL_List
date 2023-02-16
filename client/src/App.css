@@ -21,27 +21,55 @@ img.nflLogo {
     max-height: 300px;
 }
 
-a.homelink, header {
+ header {
     justify-content: center;
     align-content: center;
-    color: white;
     background-color: black;
     padding: 1em;
     min-height: 2em; 
-    font-family: 'Georgia';
-    text-decoration: none;
+    
 }
 
-h1.allDivs {
+a.homelink {
+    justify-content: flex-start;
+    line-height: 2;
+    font-family: 'Georgia';
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
+.division {
+    text-align: center;
     font-family: 'Georgia';
     text-decoration: none;
     color: black;
 }
 
-div.team {
+h2.teamName, h3.playerName, h2.conferenceSelect, div.division, div.teamPlayer, div.team, h2.divisionSelect, textarea#name, textarea#aged {
     font-family: 'Georgia';
+    text-align: center;
 }
 
-div.teamPlayer {
-    font-family: 'Georgia';
+form.createPlayer {
+    line-height: 4;
+    font-family: 'Gerogia';
+    font-size: 110%;
+} 
+
+form.createPlayer, label.createAge, textarea#age, label.createPlayer, select#position, button.addPlayer {
+    text-align: center;
 }
+
+img.teamlogo {
+    display: flex;
+}
+
+/* label.createAge, textarea#age {
+   position: relative; left: 10px;
+}
+
+label.createPlayer, select#position, button.addPlayer {
+    position: relative; left: 20px;
+} */
+
