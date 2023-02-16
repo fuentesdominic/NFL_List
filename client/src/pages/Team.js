@@ -41,7 +41,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
 
     const getAtPlayers = async () => {
         try {
-          let res = await axios.get('http://localhost:3001/api/teams/players')
+          let res = await axios.get('/api/teams/players')
           setCurrentPlayers(res.data.players)
         } catch (err) {
           console.log(err)
@@ -50,7 +50,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
 
     const handleSubmit = async (evt) => {
         evt.preventDefault()
-        await axios.post('http://localhost:3001/api/teams/players', createPlayer)
+        await axios.post('/api/teams/players', createPlayer)
         setCreatePlayer(addPlayer)
         getAllPlayers()
     }
@@ -60,7 +60,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
     }
 
     const handleDelete = async (id) => {
-        await axios.delete(`http://localhost:3001/api/teams/players/${id}`)
+        await axios.delete(`/api/teams/players/${id}`)
         getAllPlayers()
     }
 

@@ -14,7 +14,7 @@ function App(props) {
 
   const getAllTeams = async () => {
     try {
-      let res = await axios.get('http://localhost:3001/api/teams')
+      let res = await axios.get('/api/teams')
       setAllTeams(res.data.teams)
     } catch (err) {
       console.log(err)
@@ -23,7 +23,7 @@ function App(props) {
 
   const getAllPlayers = async () => {
     try {
-      let res = await axios.get('http://localhost:3001/api/teams/players')
+      let res = await axios.get('/api/teams/players')
       setAllPLayers(res.data.players)
     } catch (err) {
       console.log(err)
