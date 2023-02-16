@@ -13,8 +13,9 @@ The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In 
 - There's a home button on the top left if you desire to go back to the home page.
 
 ## Screenshots of application
-
+Home Page
 ![Home Page](https://i.imgur.com/TcFh2AX.png)
+Select Team
 ![Select Team](https://i.imgur.com/fFhGuKN.png)
 
 ## Technology Used
