@@ -14,7 +14,7 @@ The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In 
 
 ## Screenshots of application
 
-![Home Page](https://i.imgur.com/a/2LFSQHG.png)
+![Home Page]([https://i.imgur.com/a/2LFSQHG.png](https://imgur.com/TcFh2AX))
 
 ## Technology Used
 
