@@ -16,7 +16,7 @@ The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In 
 
 ## Technology Used
 
-`JavaScript`, `React`, `CSS`, 
+`JavaScript`, `MongoDB`, `Express.js`, `React`, `Node.js`, `CSS`
 
 ## Future changes
 
