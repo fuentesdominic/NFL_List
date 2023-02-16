@@ -4,20 +4,23 @@ const Conference = ({allTeams}) => {
 
     const {division} = useParams()
     const {conference} = useParams()
-    console.log(division, conference)
 
     const teams = allTeams.filter(team => division.toLowerCase() === team.division.toLowerCase() && conference.toLowerCase() === team.conference.toLowerCase())
 
     return (
         <div>
+            <div>
             <h2 className="conferenceSelect">Select A Team:</h2>
-          {teams.map((team) => (
-            <div key={team._id}>
+            </div>
+        <div className="conferenceLogo">
+            {teams.map((team) => (
+            <div className="conferenceLogoMap" key={team._id}>
                 <Link to={`/${team.team}`}>
                     <img className="teamlogo" src={team.logo} alt=''></img>
                 </Link>
             </div>
-          ))}
+            ))}
+            </div>
         </div>
     )
 }
