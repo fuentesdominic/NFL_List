@@ -34,6 +34,7 @@ There is always room for improvement! As soon as possible I would like to make t
 
 ##  Credits
 
+- [Navigate on Heroku](https://nfl-list.herokuapp.com/)
 - [Information about the NFL and their logos](https://www.nfl.com/)
 - [Understanding CRUD](https://geeksforgeeks.com/)
 - [Using breakpoint on CSS](https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-should-you-use/)
