@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
-import Edit from "../components/Edit"
+import CreatePlayer from "../components/CreatePlayer"
 
 const Team = ({allTeams, allPlayers, getAllPlayers}) => {
     
@@ -23,7 +23,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
 
     const handlePut = async (id) => {
         console.log(id, positions[id])
-        const res = await axios.put(`/api/teams/players/${id}`, {position: positions[id]})
+        const res = await axios.put(`http://localhost:3001/api/teams/players/${id}`, {position: positions[id]})
         getAtPlayers()
     }
     const handleEdit = (evt) => {
@@ -41,7 +41,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
 
     const getAtPlayers = async () => {
         try {
-          let res = await axios.get('/api/teams/players')
+          let res = await axios.get('http://localhost:3001/api/teams/players')
           setCurrentPlayers(res.data.players)
         } catch (err) {
           console.log(err)
@@ -60,7 +60,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
     }
 
     const handleDelete = async (id) => {
-        await axios.delete(`/api/teams/players/${id}`)
+        await axios.delete(`http://localhost:3001/api/teams/players/${id}`)
         getAllPlayers()
     }
 
@@ -120,7 +120,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                     rows='1'
                     onChange={handleChange}
                     value={createPlayer.age}></textarea>
-                <label className="createPlayer" htmlFor="position">Position:</label>
+                <label className="createSelection" htmlFor="position">Position:</label>
                 <select id="position" onChange={handleChange} value={createPlayer.position}>
                     <option value='Quarterback'>Quarterback</option>
                     <option value='Offensive Linemen'>Offensive Linemen</option>
