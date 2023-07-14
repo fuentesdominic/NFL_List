@@ -22,14 +22,12 @@ const CreatePlayer = ({ allTeams }) => {
         setCreatePlayer({ ...createPlayer, [event.target.id]: event.target.value })
     };
 
-    // const teamPageUrl = `${team}`
-
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         await axios.post('http://localhost:3001/api/teams/players', createPlayer)
             setCreatePlayer(addPlayer)
-            await navigate(`${team}`)
+            await navigate(-1)
     };
 
     let addPlayerBtn = ''
