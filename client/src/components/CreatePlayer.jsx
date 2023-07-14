@@ -75,12 +75,14 @@ const CreatePlayer = ({ allTeams }) => {
         setCreatePlayer({ ...createPlayer, [event.target.id]: event.target.value })
     };
 
+    const teamPageUrl = 'http://localhost:3001/api/teams'
+
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         await axios.post('http://localhost:3001/api/teams/players', createPlayer)
             setCreatePlayer(addPlayer)
-            await navigate('/')
+            await navigate(teamPageUrl)
     };
 
     let validButton = ''
@@ -130,52 +132,52 @@ const CreatePlayer = ({ allTeams }) => {
           <label className="teamSelection" htmlFor="team">Team:</label>
             <select id="team" onChange={onchange} value={team}>
               <optgroup label="NFC South">
-                <option value='buccaneers'>Buccaneers</option>
-                <option value='panthers'>Panthers</option>
-                <option value='saints'>Saints</option>
-                <option value='falcons'>Falcons</option>
+                <option value='Buccaneers'>Buccaneers</option>
+                <option value='Panthers'>Panthers</option>
+                <option value='Saints'>Saints</option>
+                <option value='Falcons'>Falcons</option>
               </optgroup>
               <optgroup label="NFC North">
-                <option value='vikings'>Vikings</option>
-                <option value='lions'>Lions</option>
-                <option value='packers'>Packers</option>
-                <option value='bears'>Bears</option>
+                <option value='Vikings'>Vikings</option>
+                <option value='Lions'>Lions</option>
+                <option value='Packers'>Packers</option>
+                <option value='Bears'>Bears</option>
               </optgroup>
               <optgroup label="NFC East">
-                <option value='cowboys'>Cowboys</option>
-                <option value='eagles'>Eagles</option>
-                <option value='giants'>Giants</option>
-                <option value='commanders'>Commanders</option>
+                <option value='Cowboys'>Cowboys</option>
+                <option value='Eagles'>Eagles</option>
+                <option value='Giants'>Giants</option>
+                <option value='Commanders'>Commanders</option>
               </optgroup>
               <optgroup label="NFC West">
                 <option value='49ers'>49ers</option>
-                <option value='seahawks'>Seahawks</option>
-                <option value='rams'>Rams</option>
-                <option value='cardinals'>Cardinals</option>
+                <option value='Seahawks'>Seahawks</option>
+                <option value='Rams'>Rams</option>
+                <option value='Cardinals'>Cardinals</option>
               </optgroup>
               <optgroup label="AFC South">
-                <option value='jaguars'>Jaguars</option>
-                <option value='titans'>Titans</option>
-                <option value='colts'>Colts</option>
-                <option value='texans'>Texans</option>
+                <option value='Jaguars'>Jaguars</option>
+                <option value='Titans'>Titans</option>
+                <option value='Colts'>Colts</option>
+                <option value='Texans'>Texans</option>
               </optgroup>
               <optgroup label="AFC North">
-                <option value='bengals'>Bengals</option>
-                <option value='ravens'>Ravens</option>
-                <option value='steelers'>Steelers</option>
-                <option value='browns'>Browns</option>
+                <option value='Bengals'>Bengals</option>
+                <option value='Ravens'>Ravens</option>
+                <option value='Steelers'>Steelers</option>
+                <option value='Browns'>Browns</option>
               </optgroup>
               <optgroup label="AFC East">
-                <option value='bills'>Bills</option>
-                <option value='dolphins'>Dolphins</option>
-                <option value='patriots'>Patriots</option>
-                <option value='jets'>Jets</option>
+                <option value='Bills'>Bills</option>
+                <option value='Dolphins'>Dolphins</option>
+                <option value='Patriots'>Patriots</option>
+                <option value='Jets'>Jets</option>
               </optgroup>
               <optgroup label="AFC West">
-                <option value='chiefs'>Chiefs</option>
-                <option value='chargers'>Chargers</option>
-                <option value='raiders'>Raiders</option>
-                <option value='broncos'>Broncos</option>
+                <option value='Chiefs'>Chiefs</option>
+                <option value='Chargers'>Chargers</option>
+                <option value='Raiders'>Raiders</option>
+                <option value='Broncos'>Broncos</option>
               </optgroup>
             </select>
 {/* add handleChange and possibly handleSubmit for selecting teams. */}

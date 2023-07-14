@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Navigate, useNavigate, useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import CreatePlayer from "../components/CreatePlayer"
@@ -7,6 +7,8 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
     
     const {team} = useParams()
     const teams = allTeams.filter(player => player.team === team)
+
+    const createPlayerNav = useNavigate('/create');
 
     const addPlayer = {
         name: '',
@@ -47,6 +49,10 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
           console.log(err)
         }
       }
+
+    const handleCreateNav = () => {
+        createPlayerNav('/create')
+    };
 
     const handleSubmit = async (evt) => {
         evt.preventDefault()
@@ -134,6 +140,9 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                 </select>
                 <button className="addPlayer" type='submit'>Add Player</button>
             </form>
+            
+            <button onClick={handleCreateNav}>Create New Player!</button>
+
         </div>
         
     )
