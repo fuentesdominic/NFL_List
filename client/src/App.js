@@ -42,10 +42,10 @@ function App(props) {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path='/create' element={<CreatePlayer allTeams={allTeams} />} />
+          <Route path='/create/:team' element={<CreatePlayer allTeams={allTeams} />} />
           <Route path="/division/:division" element={<Division />} />
           <Route path="/conference/:division/:conference" element={<Conference allTeams={allTeams}/>} />
-          <Route path="/:team" element={<Team allTeams={allTeams} allPlayers={allPlayers} getAllPlayers={getAllPlayers} />} />
+          <Route path="/teams/:team" element={<Team allTeams={allTeams} allPlayers={allPlayers} getAllPlayers={getAllPlayers} />} />
         </Routes>
       </main>
     </div>

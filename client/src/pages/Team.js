@@ -1,4 +1,4 @@
-import { Navigate, useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import CreatePlayer from "../components/CreatePlayer"
@@ -10,14 +10,14 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
 
     const createPlayerNav = useNavigate('/create');
 
-    const addPlayer = {
-        name: '',
-        age: '',
-        position: '',
-        team: `${team}`
-    }
+    // const addPlayer = {
+    //     name: '',
+    //     age: '',
+    //     position: '',
+    //     team: `${team}`
+    // }
 
-    const [createPlayer, setCreatePlayer] = useState(addPlayer)
+    // const [createPlayer, setCreatePlayer] = useState(addPlayer)
     const [currentPlayers, setCurrentPlayers] = useState()
 
     const [positions, setPositions] = useState({position: ''})
@@ -51,19 +51,19 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
       }
 
     const handleCreateNav = () => {
-        createPlayerNav('/create')
+        createPlayerNav(`/create/${team}`)
     };
 
-    const handleSubmit = async (evt) => {
-        evt.preventDefault()
-        await axios.post('/api/teams/players', createPlayer)
-        setCreatePlayer(addPlayer)
-        getAllPlayers()
-    }
+    // const handleSubmit = async (evt) => {
+    //     evt.preventDefault()
+    //     await axios.post('/api/teams/players', createPlayer)
+    //     setCreatePlayer(addPlayer)
+    //     getAllPlayers()
+    // }
 
-    const handleChange = (evt) => {
-        setCreatePlayer({...createPlayer, [evt.target.id]: evt.target.value})
-    }
+    // const handleChange = (evt) => {
+    //     setCreatePlayer({...createPlayer, [evt.target.id]: evt.target.value})
+    // }
 
     const handleDelete = async (id) => {
         await axios.delete(`http://localhost:3001/api/teams/players/${id}`)
@@ -111,7 +111,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                 }
                 </div>
             ))}
-            <form className="createPlayer" onSubmit={handleSubmit}>
+            {/* <form className="createPlayer" onSubmit={handleSubmit}>
             <label className="createName" htmlFor="name">Name:</label>
                 <textarea
                     id="name"
@@ -139,7 +139,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                     <option value='Safety'>Safety</option>
                 </select>
                 <button className="addPlayer" type='submit'>Add Player</button>
-            </form>
+            </form> */}
             
             <button onClick={handleCreateNav}>Create New Player!</button>
 
