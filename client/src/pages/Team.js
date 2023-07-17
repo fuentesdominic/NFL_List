@@ -12,28 +12,29 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
     const [currentPlayers, setCurrentPlayers] = useState()
 
     const [positions, setPositions] = useState({position: ''})
-    const [showEdit, setShowEdit] = useState('')
+    const [showEdit, setShowEdit] = useState(false)
 
     const handlePut = async (id) => {
         console.log(id, positions[id])
         const res = await axios.put(`http://localhost:3001/api/teams/players/${id}`, {position: positions[id]})
         getAtPlayers()
     }
+    
 
- 
 
     const handleEdit = (evt) => {
         setPositions({[evt.target.id]: evt.target.value})
     }
-      
-    const handleShowEdit = () => {
-        setShowEdit(!showEdit)
-    }
+
+    const handleShowEdit = (id) => {
+        setShowEdit((prevShowEdit) => (prevShowEdit === id ? !prevShowEdit : id));
+    };
+
     let players
     if (currentPlayers) {
          players = currentPlayers.filter(player => player.team === team)
         
-    }
+    };
 
     const getAtPlayers = async () => {
         try {
@@ -42,7 +43,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
         } catch (err) {
           console.log(err)
         }
-      }
+      };
 
     const handleCreateNav = () => {
         createPlayerNav(`/create/${team}`)
@@ -51,7 +52,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
     const handleDelete = async (id) => {
         await axios.delete(`http://localhost:3001/api/teams/players/${id}`)
         getAllPlayers()
-    }
+    };
 
       useEffect(() => {
         getAtPlayers()
@@ -77,9 +78,10 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                     <h4>{player.name}</h4>
                     <p>{player.age}</p>
                     <p>{player.position}</p>
-                <button onClick={handleShowEdit}>Edit</button>
+                <button onClick={() => handleShowEdit(player._id)}>Edit</button>
                 <button onClick={() => handleDelete(player._id)}>Delete</button>
-                    {showEdit && <div> <label htmlFor={player._id}>Position:</label> <select 
+                    {showEdit === player._id && <div> <label htmlFor={player._id}>Position:</label> 
+                    <select 
                     id={player._id} 
                     onChange={(evt) => handleEdit(evt, player._id)} 
                     value={positions.position}>
@@ -93,8 +95,12 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                         <option value='Linebacker'>Linebacker</option>
                         <option value='Cornerback'>Cornerback</option>
                         <option value='Safety'>Safety</option>
-                </select>
-                <button onClick={() => handlePut(player._id)}>Confirm</button> </div>
+                    </select>
+                    <button onClick={() => handlePut(player._id)}>Confirm</button>
+                    
+
+                    {/* <button onClick={handleShowEdit}>edit</button> */}
+                    </div>
                 }
                 </div>
             ))}
