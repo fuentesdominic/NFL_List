@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom"
+import './Division.css'
 // navigating to each conference from nfc or afc(home page). 
 const Division = () => {
 

@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
+import './Team.css'
 
 const Team = ({allTeams, allPlayers, getAllPlayers}) => {
     
@@ -12,28 +13,26 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
     const [currentPlayers, setCurrentPlayers] = useState()
 
     const [positions, setPositions] = useState({position: ''})
-    const [showEdit, setShowEdit] = useState(false)
+    const [showEdit, setShowEdit] = useState(null)
 
     const handlePut = async (id) => {
         console.log(id, positions[id])
         const res = await axios.put(`http://localhost:3001/api/teams/players/${id}`, {position: positions[id]})
         getAtPlayers()
-    }
+        window.location.reload();
+    };
     
-
-
     const handleEdit = (evt) => {
         setPositions({[evt.target.id]: evt.target.value})
-    }
+    };
 
     const handleShowEdit = (id) => {
         setShowEdit((prevShowEdit) => (prevShowEdit === id ? !prevShowEdit : id));
-    };
+    }; 
 
     let players
     if (currentPlayers) {
          players = currentPlayers.filter(player => player.team === team)
-        
     };
 
     const getAtPlayers = async () => {

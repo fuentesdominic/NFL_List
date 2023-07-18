@@ -2,12 +2,12 @@ import './App.css';
 import { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import axios from 'axios'
-import Home from './pages/Home'
-import Division from './pages/Division'
-import Conference from './pages/Conference'
-import Team from './pages/Team'
-import Header from './components/Header';
-import CreatePlayer from './components/CreatePlayer';
+import Home from './pages/Home/Home'
+import Division from './pages/Division/Division'
+import Conference from './pages/Conference/Conference'
+import Team from './pages/Team/Team'
+import Header from './components/header/Header';
+import CreatePlayer from './components/create/CreatePlayer';
 
 function App(props) {
   const [allTeams, setAllTeams] = useState([])

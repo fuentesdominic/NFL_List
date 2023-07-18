@@ -1,5 +1,7 @@
 import { useParams, Link } from "react-router-dom"
 // navigating from teams inside a single conference to bringing you into a page for a single team
+import './Conference.css'
+
 const Conference = ({allTeams}) => {
 
     const {division} = useParams()
