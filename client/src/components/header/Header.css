@@ -1,0 +1,22 @@
+header {
+    font-family: 'Georgia';
+    justify-content: center;
+    align-items: center;
+    min-height: 2rem;
+    background-color: black;
+    padding: 1.25rem;
+}
+
+.imgLogo {
+    max-width: 32px;
+    max-height: 32px;
+    min-width: auto;
+    position: absolute; right: 25px;
+}
+
+.homeLink {
+    line-height: 2;
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    margin: 1rem;
+}
