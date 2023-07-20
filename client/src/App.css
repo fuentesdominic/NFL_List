@@ -1,23 +1,16 @@
-.homenfc {
+/* .homenfc {
     max-height: 400px; 
     max-width: 400px;
-}
+} */
 
-.homeafc {
+/* .homeafc {
     max-height: 400px;
     max-width: 400px;
-}
+} */
 
 .teamlogo {
     max-width: 300px;
     max-height: 300px;
-}
-
-.division {
-    text-align: center;
-    font-family: 'Georgia';
-    text-decoration: none;
-    color: black;
 }
 
 h2.teamName, h3.playerName, h2.conferenceSelect, div.division, div.teamPlayer, div.team, h2.divisionSelect, textarea#name, textarea#aged {

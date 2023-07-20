@@ -1,0 +1,30 @@
+.home-page {
+    text-align: center;
+    font-family: 'Georgia';
+}
+
+.div-option {
+    margin: 3rem;
+}
+
+.homeNFC {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.homeNFC:hover {
+    scale: 1.1;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.homeAFC {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.homeAFC:hover {
+    scale: 1.1;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
