@@ -8,8 +8,8 @@
 }
 
 .homeNFC {
-    max-width: 400px;
-    max-height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 .homeNFC:hover {
@@ -19,8 +19,8 @@
 }
 
 .homeAFC {
-    max-width: 400px;
-    max-height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 .homeAFC:hover {

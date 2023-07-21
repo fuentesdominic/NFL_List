@@ -30,8 +30,8 @@ h1:hover {
 
 .image {
     margin: 3rem;
-    width: 50vh;
-    height: 28vh;
+    max-width: 48vh;
+    max-height: 30vh;
     object-fit: cover;
 }
 
