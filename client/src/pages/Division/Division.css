@@ -30,8 +30,8 @@ h1:hover {
 
 .image {
     margin: 3rem;
-    width: 60vh;
-    height: 36vh;
+    width: 50vh;
+    height: 28vh;
     object-fit: cover;
 }
 
