@@ -39,14 +39,15 @@ const CreatePlayer = ({ allTeams }) => {
           </button>
         )
       } else {
-        addPlayerBtn = <h3>Player name is required</h3>
+        addPlayerBtn = <h3 className="error-message">Player name is required</h3>
       };
 
   return (
     <div className="create-page">
+        <h1 className="createTitle">Create Player</h1>
       <form onSubmit={handleSubmit} className="playerForm">
-        <h1>Create Player</h1>
         <input 
+          className="input-name"
           placeholder="Name"
           id='name'
           type="text"
@@ -55,6 +56,7 @@ const CreatePlayer = ({ allTeams }) => {
           />
         
         <input 
+          className="input-age"
           placeholder="Age"
           id="age"
           type="text"
@@ -62,8 +64,9 @@ const CreatePlayer = ({ allTeams }) => {
           value={createPlayer.age}
           />
 
+        <div className="position-div">
         <label className="createPostion" htmlFor="position">Position:</label> 
-          <select id="position" onChange={handleChange} value={createPlayer.position}>
+          <select className="select-positions" id="position" onChange={handleChange} value={createPlayer.position}>
             <option value='' disabled selected>Select</option>
           <option value='Quarterback'>Quarterback</option>
               <option value='Offensive Linemen'>Offensive Linemen</option>
@@ -75,9 +78,14 @@ const CreatePlayer = ({ allTeams }) => {
               <option value='Cornerback'>Cornerback</option>
               <option value='Safety'>Safety</option>
           </select>
-
+          </div>
           {addPlayerBtn}
       </form>
+
+        <div className="image-container">
+          <img className="image" src="https://1000logos.net/wp-content/uploads/2017/05/NFL-Logo-history.png" alt=""></img>
+        </div>
+
     </div>
   )
 }
