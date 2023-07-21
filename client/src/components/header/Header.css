@@ -22,7 +22,7 @@ header {
 }
 
 .homeLink:hover {
-    scale: 1.1;
+    text-decoration: underline;
     transition: transform 0.3s ease;
     cursor: pointer;
 }

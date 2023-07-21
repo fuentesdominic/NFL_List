@@ -6,7 +6,7 @@ const Division = () => {
     const {division} = useParams()
     return (
         <div className="division-page">
-            <h2 className="divisionSelect">Select A Conference:</h2>
+            <h2 className="divisionTitle">Select A Conference:</h2>
             <Link className="division" to={`/conference/${division}/north`}>
             <div>
                 <h1>North</h1>
@@ -27,6 +27,9 @@ const Division = () => {
             <h1>East</h1>
         </div>
         </Link>
+        <div className="image-container">
+            <img className="image" src="https://www.usatoday.com/gcdn/presto/2022/09/07/USAT/532e129b-ea86-4bce-ba3c-884841f701f9-mostsearchedNFL_v1_promo.jpg?crop=7014,3945,x497,y449&width=3200&height=1800&format=pjpg&auto=webp" alt=""></img>
+        </div>
     </div>
     )
 }

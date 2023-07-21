@@ -1,6 +1,38 @@
 .division-page {
     font-family: 'Georgia';
-
 }
+
+.divisionTitle {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.division {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(1,1,1,1);
+}
+
+h1:hover {
+    color: rgba(1,25,255,1);
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    margin: 3rem;
+    width: 60vh;
+    height: 36vh;
+    object-fit: cover;
+}
+
+
 
 
