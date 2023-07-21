@@ -32,6 +32,11 @@
     font-size: 24px;
 }
 
+.teamLogo {
+    max-width: 300px;
+    max-height: 300px;
+}
+
 .teamPlayer {
     display: flex;
     flex-direction: column;

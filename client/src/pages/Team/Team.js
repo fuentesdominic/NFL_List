@@ -62,7 +62,7 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
             <h2 className="teamTitle">{team}</h2>
             {teams.map((team) => (
                 <div className="teamInfo" key={team._id}>
-                    <img className="teamlogo" src={team.logo} alt=''></img>
+                    <img className="teamLogo" src={team.logo} alt=''></img>
                     <h4>Stadium Location:</h4>
                     <h3>{team.location}</h3>
                     <h4>Stadium Name:</h4>
