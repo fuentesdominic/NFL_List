@@ -14,15 +14,15 @@ The NFL consists of 32 teams. That's a lot of oranizations to keep track of. In 
 
 ## Screenshots of application
 
-![Home Page](https://i.imgur.com/TcFh2AX.png)
+![Home Page](https://i.imgur.com/y8BerUg.png)
 
 ![Select Team](https://i.imgur.com/fFhGuKN.png)
 
-![Team Details](https://i.imgur.com/YR2cQz8.png)
+![Team Details](https://i.imgur.com/vnGxP5x.png)
 
 ## Technology Used
 
-`JavaScript` `MongoDB` `Express.js` `React` `Node.js` `CSS`
+`MongoDB` `Express.js` `React` `Node.js` `CSS`
 
 ## Future changes
 

@@ -8,6 +8,11 @@
     margin: 3rem;
 }
 
+.divisionTitle:hover {
+    color: rgba(1,1,1,1);
+    text-decoration: none;
+}
+
 .division {
     display: flex;
     justify-content: center;
