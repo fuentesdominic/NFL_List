@@ -1,0 +1,21 @@
+.conferenceTitle {
+    font-family: 'Georgia';
+    text-align: center;
+}
+
+.teamLogo {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.teamLogo:hover {
+    scale: 1.1;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.conferenceLogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -18,6 +18,8 @@
 h1:hover {
     color: rgba(1,25,255,1);
     text-decoration: underline;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .image-container {

@@ -1,0 +1,105 @@
+.team-page {
+    font-family: 'Georgia';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamTitle {
+    text-decoration: underline;
+    margin: 3rem;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(1,1,1,1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(1,1,1,0.05);
+}
+
+.playerTitle {
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.teamPlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    box-shadow: 0 1px 3px rgba(1,1,1,1);
+    padding: 1.5rem;
+    background-color: rgba(1,1,1,0.05);
+    border-radius: 10px;
+}
+
+.edit-btn {
+    margin: 0.5rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.confirm-btn {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.confirm-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.playerSelect {
+    margin: 0.5rem;
+}
+
+.delete-btn {
+    background-color: #DC3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+.create-btn {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: #9370DB;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem;
+    font-size: 16px;
+    box-shadow: 0 1px 3px rgba(1,1,1,1);
+}
+
+.create-btn:hover {
+    background-color: #8068a3;
+    transform: scale(1.1);
+}
+

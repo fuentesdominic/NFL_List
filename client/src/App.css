@@ -8,39 +8,32 @@
     max-width: 400px;
 } */
 
-.teamlogo {
-    max-width: 300px;
-    max-height: 300px;
-}
-
-h2.teamName, h3.playerName, h2.conferenceSelect, div.division, div.teamPlayer, div.team, h2.divisionSelect, textarea#name, textarea#aged {
+/* h2.teamName, h3.playerName, h2.conferenceSelect, div.division, div.teamPlayer, div.team, h2.divisionSelect, textarea#name, textarea#aged {
     font-family: 'Georgia';
     text-align: center;
-}
+} */
 
-form.createPlayer {
+/* form.createPlayer {
     line-height: 4;
     font-family: 'Gerogia';
     font-size: 110%;
-} 
+}  */
 
-form.createPlayer, label.createAge, textarea#age, label.createPlayer, select#position, button.addPlayer {
+/* form.createPlayer, label.createAge, textarea#age, label.createPlayer, select#position, button.addPlayer {
     text-align: center;
-}
+} */
 
-div.conferenceLogo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-label.createAge, textarea#age {
+
+/* label.createAge, textarea#age {
    position: relative; left: 10px;
-}
+} */
 
-label.createPlayer, select#position, button.addPlayer {
+/* label.createPlayer, select#position, button.addPlayer {
     position: relative; left: 20px;
-}
+} */
+
+
 /* break points */
 
 /* ----------- Google Pixel ----------- */

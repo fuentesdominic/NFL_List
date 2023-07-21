@@ -12,13 +12,13 @@ const Conference = ({allTeams}) => {
     return (
         <div>
             <div>
-            <h2 className="conferenceSelect">Select A Team:</h2>
+            <h2 className="conferenceTitle">Select A Team:</h2>
             </div>
         <div className="conferenceLogo">
             {teams.map((team) => (
             <div className="conferenceLogoMap" key={team._id}>
                 <Link to={`/teams/${team.team}`}>
-                    <img className="teamlogo" src={team.logo} alt=''></img>
+                    <img className="teamLogo" src={team.logo} alt=''></img>
                 </Link>
             </div>
             ))}

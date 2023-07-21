@@ -58,10 +58,10 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
       }, [allPlayers])
 
     return currentPlayers && (
-        <div>
-            <h2 className="teamName">{team}</h2>
+        <div className="team-page">
+            <h2 className="teamTitle">{team}</h2>
             {teams.map((team) => (
-                <div className="team" key={team._id}>
+                <div className="teamInfo" key={team._id}>
                     <img className="teamlogo" src={team.logo} alt=''></img>
                     <h4>Stadium Location:</h4>
                     <h3>{team.location}</h3>
@@ -71,15 +71,15 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                     <h3>{team.capacity}</h3>
                 </div>
             ))}
-                <h3 className="playerName">Players:</h3>
+                <h3 className="playerTitle">Players:</h3>
             {players.map((player) => (
                 <div className="teamPlayer" key={player._id}>
-                    <h4>{player.name}</h4>
-                    <p>{player.age}</p>
-                    <p>{player.position}</p>
-                <button onClick={() => handleShowEdit(player._id)}>Edit</button>
-                <button onClick={() => handleDelete(player._id)}>Delete</button>
-                    {showEdit === player._id && <div> <label htmlFor={player._id}>Position:</label> 
+                    <h4>Name: {player.name}</h4>
+                    <p>Age: {player.age}</p>
+                    <p>Position: {player.position}</p>
+                <button className="edit-btn" onClick={() => handleShowEdit(player._id)}>Edit</button>
+                <button className="delete-btn" onClick={() => handleDelete(player._id)}>Delete</button>
+                    {showEdit === player._id && <div> <label className="playerSelect" htmlFor={player._id}>Position:</label> 
                     <select 
                     id={player._id} 
                     onChange={(evt) => handleEdit(evt, player._id)} 
@@ -95,16 +95,13 @@ const Team = ({allTeams, allPlayers, getAllPlayers}) => {
                         <option value='Cornerback'>Cornerback</option>
                         <option value='Safety'>Safety</option>
                     </select>
-                    <button onClick={() => handlePut(player._id)}>Confirm</button>
-                    
-
-                    {/* <button onClick={handleShowEdit}>edit</button> */}
+                    <button className="confirm-btn" onClick={() => handlePut(player._id)}>Confirm</button>
                     </div>
                 }
                 </div>
             ))}
             
-            <button onClick={handleCreateNav}>Create New Player!</button>
+            <button className="create-btn" onClick={handleCreateNav}>Create New Player!</button>
 
         </div>
         
